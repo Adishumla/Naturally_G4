@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "// SERVING //": "",
+    "serve": "cross-env NODE_ENV=development concurrently \"postcss public/css/tailwind.css -o public/build/tailwind.css --watch\"  \"live-server ./public\"",
+    "serve:prod": "cross-env NODE_ENV=production npm run serve",
+    "start": "npm run serve",
+    "// BUILDING //": "",
+    "build": "postcss public/css/tailwind.css -o public/build/tailwind.css",
+    "build:prod": "cross-env NODE_ENV=production npm run build",
+    "// LINTING //": "",
+    "lint:css": "stylelint public/css"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.5.1",
+    "tailwindcss": "^1.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "concurrently": "^4.1.0",
+    "cross-env": "^5.2.0",
+    "cssnano": "^4.1.10",
+    "live-server": "^1.2.1",
+    "postcss-cli": "^6.1.2",
+    "postcss-import": "^12.0.1",
+    "stylelint": "^10.0.1",
+    "stylelint-cli": "^1.1.0",
+    "stylelint-config-recommended": "^2.2.0"
+  }
+}

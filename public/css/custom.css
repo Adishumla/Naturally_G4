@@ -1,0 +1,4 @@
+/* sample component */
+.sample-component {
+  @apply .p-1;
+}
