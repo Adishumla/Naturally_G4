@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@400;700&display=swap");
+body {
+  margin: 0;
+  font-family: "Encode Sans Condensed", sans-serif;
+}
+.carousel {
+  position: relative;
+  height: 100vh;
+}
+
+.carousel__item {
+  height: 100vh;
+  background: grey;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #ffffff;
+  display: none;
+}
+.carousel__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__item--selected {
+  display: block;
+}
+
+.carousel__nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.carousel__button {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: #ffffff;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel__button--selected {
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+
+.hero-span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hero-span h1 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-weight: 700;
+}
+.hero-span button {
+  background: #dbdbdb;
+  color: #000000;
+  border: none;
+  padding: 10px 41px;
+  border-radius: 18px;
+  margin-top: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 50px;
+}
+//nav
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  cursor: pointer;
+}
+.hamburger .line {
+  width: 30px;
+  height: 3px;
+  background: #ffffff;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+//navbar fixed
+.navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
