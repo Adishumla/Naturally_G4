@@ -219,7 +219,7 @@ body {
   margin: 0;
   text-align: center;
   line-height: 1.5;
-  font-weight: 100;
+  font-weight: 500;
 }
 .sign-up-container {
   display: flex;
@@ -240,6 +240,8 @@ body {
 }
 .sign-up-container input::placeholder {
   color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
 }
 .sign-up-container button {
   background: transparent;
