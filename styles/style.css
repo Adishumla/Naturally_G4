@@ -2,8 +2,6 @@
 body {
   margin: 0;
   font-family: "Encode Sans Condensed", sans-serif;
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
 }
 .carousel {
   position: relative;
