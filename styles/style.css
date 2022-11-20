@@ -152,6 +152,7 @@ body {
   background: #ffffff;
   cursor: pointer;
   position: relative;
+  font-size: 20px;
 }
 .card-img-1 {
   width: 100%;
