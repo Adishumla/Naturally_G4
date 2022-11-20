@@ -118,6 +118,8 @@ body {
   background: transparent;
   height: 100%;
   margin-top: 50px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
 }
 
 .gridscroll {
