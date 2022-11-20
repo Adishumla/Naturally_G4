@@ -122,6 +122,8 @@ body {
 
 .gridscroll {
   display: inline-block;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
 }
 
 .gridscroll img {
