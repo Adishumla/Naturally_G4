@@ -87,6 +87,7 @@ body {
 //nav
 //navbar fixed
 #navbar {
+  position: -webkit-absolute;
   background-color: #333;
   position: fixed;
   top: 0;
@@ -98,7 +99,7 @@ body {
 #navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #000000;
   text-align: center;
   padding: 15px;
   text-decoration: none;
