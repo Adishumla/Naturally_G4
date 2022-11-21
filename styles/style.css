@@ -107,7 +107,7 @@ body {
 }
 //nav
 //navbar fixed
-#navbar {
+.navbar {
   position: -webkit-absolute;
   background-color: #333;
   position: fixed;
@@ -117,7 +117,16 @@ body {
   transition: top 0.3s;
 }
 
-#navbar a {
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+}
+
+.navbar a {
   float: left;
   display: block;
   color: #000000;
@@ -127,9 +136,21 @@ body {
   font-size: 17px;
 }
 
-#navbar a:hover {
+.navbar a:hover {
   background-color: #ddd;
   color: black;
+}
+
+.hamburger {
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #000000;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 5px;
 }
 
 /* HORIZONTAL SCROLL */
