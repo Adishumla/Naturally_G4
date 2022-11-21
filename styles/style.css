@@ -10,7 +10,7 @@ body {
 
 .carousel__item {
   height: 100vh;
-  background: grey;
+  //background: grey;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
   font-size: 2em;
@@ -25,6 +25,27 @@ body {
 
 .carousel__item--selected {
   display: block;
+}
+
+.second .carousel__button {
+  background: #d9d9d9;
+  border: none;
+}
+.second .carousel__button--selected {
+  background: #4d4d4d;
+}
+
+.second .carousel__img {
+  height: 92%;
+}
+
+.second .carousel__nav {
+  margin: 0;
+  gap: 5px;
+}
+
+.last {
+  margin-top: -45px;
 }
 
 .carousel__nav {
