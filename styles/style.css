@@ -152,6 +152,18 @@ body {
   transition: 0.4s;
   border-radius: 5px;
 }
+/*active line create an N */
+.active .line1 {
+  transform: rotate(-90deg) translate(-9px, 9.4px);
+}
+.active .line2 {
+  transform: rotate(55deg) translate(-2px, 2px);
+  width: 35px;
+  height: 5px;
+}
+.active .line3 {
+  transform: rotate(90deg) translate(-9px, 10px);
+}
 
 /* HORIZONTAL SCROLL */
 .scroll-container {

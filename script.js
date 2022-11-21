@@ -41,9 +41,9 @@ let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementByClass("navbar").style.top = "0";
+    document.getElementByClassName("navbar").style.top = "0";
   } else {
-    document.getElementByClass("navbar").style.top = "-50px";
+    document.getElementByClassName("navbar").style.top = "-50px";
   }
   prevScrollpos = currentScrollPos;
 };
@@ -81,3 +81,10 @@ thumbnailContainer.querySelectorAll("div").forEach((el) => {
 slideGallery.addEventListener("scroll", (e) => highlightThumbnail());
 
 highlightThumbnail();
+//hamburger
+const hamburger = document.querySelector(".hamburger");
+const line = document.querySelector(".line");
+
+hamburger.addEventListener("click", () => {
+  line.classList.toggle("active");
+});
