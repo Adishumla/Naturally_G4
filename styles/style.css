@@ -130,7 +130,8 @@ body {
 }
 
 .gridscroll img {
-  margin: 0px;
+  margin: -3px;
+  padding: 0px;
 }
 .heart-container {
   height: 40px;
