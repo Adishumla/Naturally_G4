@@ -88,3 +88,31 @@ const line = document.querySelector(".line");
 hamburger.addEventListener("click", () => {
   line.classList.toggle("active");
 });
+
+/* mobile, add hover effect when img is in viewport */
+const images = document.querySelectorAll(".img");
+
+var myElement = document.getElementById("my-element");
+
+function elementInViewport() {
+  var bounding = myElement.getBoundingClientRect();
+  var myElementHeight = myElement.offsetHeight;
+  var myElementWidth = myElement.offsetWidth;
+
+  if (
+    bounding.top >= -myElementHeight &&
+    bounding.left >= -myElementWidth &&
+    bounding.right <=
+      (window.innerWidth || document.documentElement.clientWidth) +
+        myElementWidth &&
+    bounding.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) +
+        myElementHeight
+  ) {
+    alert("Element is in the viewport!");
+  } else {
+    alert("Element is NOT in the viewport!");
+  }
+}
+
+/* get scroll in px */
