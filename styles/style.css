@@ -372,3 +372,7 @@ body {
   scale: 1.2;
   border: 2px solid #000000;
 }
+
+.hero-span h1 {
+  width: 100%;
+}
