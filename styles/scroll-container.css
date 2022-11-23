@@ -1,0 +1,20 @@
+.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  background: transparent;
+  height: 100%;
+  margin-top: 50px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.gridscroll {
+  display: inline-block;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.gridscroll img {
+  margin: -3px;
+  padding: 0px;
+}

@@ -1,0 +1,105 @@
+.carousel {
+  position: relative;
+  height: 100vh;
+}
+
+.carousel-item {
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #ffffff;
+  display: none;
+}
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item-selected {
+  display: block;
+}
+
+.second .carousel-button {
+  background: #d9d9d9;
+  border: none;
+}
+.second .carousel-button-selected {
+  background: #4d4d4d;
+}
+
+.second .carousel-img {
+  height: 92%;
+}
+
+.second .carousel-nav {
+  margin: 0;
+  gap: 5px;
+}
+
+.last {
+  margin-top: -45px;
+}
+
+.carousel-nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.carousel-button {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: #ffffff;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-button-selected {
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+/* carousel end */
+
+/* hero text start */
+.hero-span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hero-span h1 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-weight: 700;
+  width: 100%;
+}
+
+.hero-span button {
+  background: #dbdbdb;
+  color: #000000;
+  border: none;
+  padding: 10px 41px;
+  border-radius: 18px;
+  margin-top: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 50px;
+}
