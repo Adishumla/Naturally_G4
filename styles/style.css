@@ -67,7 +67,7 @@ body {
 
 /* Start drop down nav */
 nav.drop-down {
-  position: absolute;
+  position: fixed;
   height: 365px;
   width: 64%;
   left: 0px;
