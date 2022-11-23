@@ -64,6 +64,29 @@ body {
 .active .line3 {
   transform: rotate(90deg) translate(-9px, 10px);
 }
+
+/* Start drop down nav */
+nav.drop-down {
+  position: absolute;
+  height: 365px;
+  width: 64%;
+  left: 0px;
+  top: 80px;
+  transform: translateX(-100%);
+}
+body.active nav.drop-down {
+  transform: translateX(0%);
+}
+nav.drop-down ul {
+  dipslay: flex;
+  flex-direction: column;
+  margin-bottom: 111px;
+}
+nav.drop-down ul li {
+  margin-bottom: 24px;
+}
+/*End drop-down nav */
+
 /*nav/header end*/
 
 /* carousel start*/
