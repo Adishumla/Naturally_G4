@@ -13,6 +13,7 @@ body {
   width: 100%;
   display: block;
   transition: top 0.3s;
+  z-index: 999;
 }
 
 .nav-container {
@@ -73,6 +74,8 @@ nav.drop-down {
   left: 0px;
   top: 80px;
   transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
 }
 body.active nav.drop-down {
   transform: translateX(0%);
