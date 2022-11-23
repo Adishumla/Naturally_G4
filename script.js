@@ -1,3 +1,11 @@
+//nav drop-down
+const dropDown = document.querySelector("nav.drop-down");
+const hamburger = document.querySelector("div.hamburger");
+
+hamburger.addEventListener("click", () => {
+  dropDown.classList.toggle("active");
+});
+
 document.querySelectorAll(".carousel").forEach((carousel) => {
   const items = carousel.querySelectorAll(".carousel-item");
   const buttonsHtml = Array.from(items, () => {
@@ -80,7 +88,6 @@ slideGallery.addEventListener("scroll", (e) => highlightThumbnail());
 
 highlightThumbnail();
 //hamburger
-const hamburger = document.querySelector(".hamburger");
 const line = document.querySelector(".line");
 
 hamburger.addEventListener("click", () => {
