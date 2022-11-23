@@ -256,6 +256,7 @@ body {
 /* heart container end */
 /* product cards end */
 
+/* not in use? start*/
 .media-scroller {
   display: grid;
   grid-auto-flow: column;
@@ -275,7 +276,9 @@ body {
 .second {
   height: 539px;
 }
+/* not in use? end*/
 
+/* sign up section start*/
 .sign-up {
   display: flex;
   justify-content: center;
@@ -333,7 +336,9 @@ body {
   transform-origin: center;
   transform: scale(1.5);
 }
+/* sign up section end*/
 
+/* footer start */
 .footer {
   display: flex;
   justify-content: space-between;
@@ -380,9 +385,10 @@ body {
   margin: 0;
   padding-bottom: 32px;
 }
-
-/* img hover effect */
+/* footer end */
+/* img hover effect (change and add to section) */
 .img-hover {
   scale: 1.2;
   border: 2px solid #000000;
 }
+/* img hover effect end */
