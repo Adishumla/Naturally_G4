@@ -5,7 +5,7 @@ body {
 }
 
 /*header start*/
-.header {
+.navbar {
   position: -webkit-absolute;
   background-color: #333;
   position: fixed;
@@ -15,7 +15,7 @@ body {
   transition: top 0.3s;
 }
 
-.header-container {
+.nav-container {
   display: grid;
   grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -24,7 +24,7 @@ body {
   padding: 10px;
 }
 
-.header a {
+.nav a {
   float: left;
   display: block;
   color: #000000;
@@ -34,13 +34,13 @@ body {
   font-size: 17px;
 }
 
-.header a:hover {
+.nav a:hover {
   background-color: #ddd;
   color: black;
 }
 /*header end*/
 
-/*nav start*/
+/*nav/header start*/
 .hamburger {
 }
 
@@ -64,7 +64,7 @@ body {
 .active .line3 {
   transform: rotate(90deg) translate(-9px, 10px);
 }
-/*nav end*/
+/*nav/header end*/
 
 /* carousel start*/
 .carousel {
