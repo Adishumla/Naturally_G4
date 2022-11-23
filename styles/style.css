@@ -3,43 +3,105 @@ body {
   margin: 0;
   font-family: "Encode Sans Condensed", sans-serif;
 }
+
+/*header start*/
+.header {
+  position: -webkit-absolute;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+}
+
+.header a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/*header end*/
+/*nav start*/
+.hamburger {
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #000000;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+/*active line create an N OBS, change to X*/
+.active .line1 {
+  transform: rotate(-90deg) translate(-9px, 9.4px);
+}
+.active .line2 {
+  transform: rotate(55deg) translate(-2px, 2px);
+  width: 35px;
+  height: 5px;
+}
+.active .line3 {
+  transform: rotate(90deg) translate(-9px, 10px);
+}
+/*nav end*/
+
+/* carousel start*/
 .carousel {
   position: relative;
   height: 100vh;
 }
 
-.carousel__item {
+.carousel-item {
   height: 100vh;
-  //background: grey;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
   font-size: 2em;
   color: #ffffff;
   display: none;
 }
-.carousel__img {
+.carousel-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.carousel__item--selected {
+.carousel-item-selected {
   display: block;
 }
 
-.second .carousel__button {
+.second .carousel-button {
   background: #d9d9d9;
   border: none;
 }
-.second .carousel__button--selected {
+.second .carousel-button-selected {
   background: #4d4d4d;
 }
 
-.second .carousel__img {
+.second .carousel-img {
   height: 92%;
 }
 
-.second .carousel__nav {
+.second .carousel-nav {
   margin: 0;
   gap: 5px;
 }
@@ -48,7 +110,7 @@ body {
   margin-top: -45px;
 }
 
-.carousel__nav {
+.carousel-nav {
   width: 100%;
   padding: 20px 0;
   position: absolute;
@@ -61,7 +123,7 @@ body {
   gap: 20px;
 }
 
-.carousel__button {
+.carousel-button {
   width: 10px;
   height: 10px;
   display: inline-block;
@@ -72,13 +134,14 @@ body {
   transition: all 0.3s ease;
 }
 
-.carousel__button--selected {
+.carousel-button-selected {
   width: 14px;
   height: 14px;
   background: transparent;
   border: 1px solid #ffffff;
 }
-
+/* carousel end */
+/* hero text start */
 .hero-span {
   position: absolute;
   top: 50%;
@@ -105,71 +168,12 @@ body {
   cursor: pointer;
   margin-top: 50px;
 }
-//nav
-//navbar fixed
-.navbar {
-  position: -webkit-absolute;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: block;
-  transition: top 0.3s;
-}
+/* hero text end */
 
-.nav-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  align-items: center;
-  justify-items: center;
-  padding: 10px;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #000000;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.hamburger {
-}
-
-.line {
-  width: 30px;
-  height: 3px;
-  background-color: #000000;
-  margin: 6px 0;
-  transition: 0.4s;
-  border-radius: 5px;
-}
-/*active line create an N */
-.active .line1 {
-  transform: rotate(-90deg) translate(-9px, 9.4px);
-}
-.active .line2 {
-  transform: rotate(55deg) translate(-2px, 2px);
-  width: 35px;
-  height: 5px;
-}
-.active .line3 {
-  transform: rotate(90deg) translate(-9px, 10px);
-}
-
-/* HORIZONTAL SCROLL */
+/* HORIZONTAL SCROLL (mirrored img)*/
 .scroll-container {
   overflow: auto;
   white-space: nowrap;
-  //padding: 5px 70px 5px 20px;
   background: transparent;
   height: 100%;
   margin-top: 50px;
