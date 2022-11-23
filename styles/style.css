@@ -39,6 +39,7 @@ body {
   color: black;
 }
 /*header end*/
+
 /*nav start*/
 .hamburger {
 }
@@ -141,6 +142,7 @@ body {
   border: 1px solid #ffffff;
 }
 /* carousel end */
+
 /* hero text start */
 .hero-span {
   position: absolute;
@@ -155,7 +157,9 @@ body {
   padding: 0;
   color: #ffffff;
   font-weight: 700;
+  width: 100%;
 }
+
 .hero-span button {
   background: #dbdbdb;
   color: #000000;
@@ -191,16 +195,9 @@ body {
   margin: -3px;
   padding: 0px;
 }
-.heart-container {
-  height: 40px;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-.v-scroll {
-  margin-right: 20px;
-}
+/* end of HORIZONTAL SCROLL */
 
+/* product cards start*/
 .card-container {
   display: flex;
   justify-content: center;
@@ -244,6 +241,20 @@ body {
   padding: 0;
   color: #000000;
 }
+
+/* heart container should be located with product information */
+.heart-container {
+  height: 40px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+/* v-scroll should not be neded when above change has been made */
+.v-scroll {
+  margin-right: 20px;
+}
+/* heart container end */
+/* product cards end */
 
 .media-scroller {
   display: grid;
@@ -336,7 +347,6 @@ body {
 }
 .footer-right {
   display: flex;
-  //justify-content: space-between;
   align-items: center;
   flex-direction: column;
   width: 50%;
@@ -375,8 +385,4 @@ body {
 .img-hover {
   scale: 1.2;
   border: 2px solid #000000;
-}
-
-.hero-span h1 {
-  width: 100%;
 }
