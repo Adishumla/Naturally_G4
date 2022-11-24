@@ -4,14 +4,14 @@
   align-items: center;
   flex-direction: column;
   background: var(--color-ice-blue);
-  margin: 20px;
+  margin: 24px;
   color: #ffffff;
   height: 381px;
 }
 .sign-up h2 {
   font-size: 20px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-bottom: 40px;
   margin: 0;
   text-align: center;
@@ -23,7 +23,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 75%;
+  width: 280px;
   max-width: 500px;
   border-bottom: 1px solid #ffffff;
 }
