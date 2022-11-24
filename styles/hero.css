@@ -93,8 +93,8 @@
 }
 
 .hero-span button {
-  background: #dbdbdb;
-  color: #000000;
+  background: var(--color-greenly);
+  color: var(--color-white);
   border: none;
   padding: 10px 41px;
   border-radius: 18px;
