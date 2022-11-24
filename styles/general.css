@@ -1,42 +1,12 @@
 :root {
   --color-white: #ffffff;
   --color-blackberry: #212121;
-
-  /* --color-greenly: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.2)
-    ),
-    #b0e7b8;
-
-  --color-naturegreen: linear-gradient(
-      0deg,
-      rgba(79, 79, 79, 0.2),
-      rgba(79, 79, 79, 0.2)
-    ),
-    #b0e7b8; */
-  --color-greenly: linear-gradient(
-      0deg,
-      rgba(79, 79, 79, 0.2),
-      rgba(79, 79, 79, 0.2)
-    ),
-    #b0e7b8;
-
-  /* --color-greenly: #8db993; */
-
-  --color-ice-blue: linear-gradient(
-      0deg,
-      rgba(216, 216, 216, 0.2),
-      rgba(216, 216, 216, 0.2)
-    ),
-    #87bcdf;
-
-  --color-blueberry: linear-gradient(
-      0deg,
-      rgba(80, 80, 80, 0.2),
-      rgba(80, 80, 80, 0.2)
-    ),
-    #87bcdf;
+  /* GREEN */
+  --color-naturegreen: #719476;
+  --color-greenly: #8db993;
+  /* BLUE */
+  --color-ice-blue: #97c2de;
+  --color-blueberry: #7ca6c2;
 }
 
 * {
