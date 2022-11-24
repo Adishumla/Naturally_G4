@@ -8,11 +8,13 @@ section.scroll-container {
 }
 section.scroll-container .gridscroll {
   display: inline-block;
-  overflow-x: scroll;
+  overflow-x: auto;
   overscroll-behavior-inline: contain;
+  padding: 0px 24px;
 }
 section.scroll-container .gridscroll img {
-  margin: -3px;
+  max-width: 382px;
+  max-height: 539px;
   padding: 0px;
 }
 section.scroll-container .text-container {
