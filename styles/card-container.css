@@ -96,3 +96,6 @@ article.card .text-container strong {
   justify-self: flex-end;
   align-self: center;
 }
+.closer {
+  margin-top: -40px;
+}
