@@ -77,3 +77,8 @@ header.navbar {
   width: 24px;
   height: 30px;
 }
+
+@media (min-width: 768px) {
+  header .navbar {
+  }
+}
