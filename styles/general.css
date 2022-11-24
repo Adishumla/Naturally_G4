@@ -1,8 +1,14 @@
 :root {
   --color-white: #ffffff;
-  --color-black: #000000;
+  --color-blackberry: #212121;
+  --color-greenly: linear-gradient(#212121 100%, #000000 20%),
+    linear-gradient(white, white);
+  --color-naturegreen: linear-gradient(#b0e7b8 100%, #000000 20%, #000000 20%),
+    linear-gradient(white, white);
   --color-ice-blue: linear-gradient(#87bcdf 100%, #d8d8d8 20%),
-    linear-gradient(white 100%, white 20%);
+    linear-gradient(white, white);
+  --color-blueberry: linear-gradient(#87bcdf 100%, #505050 20%),
+    linear-gradient(white, white);
 }
 
 * {
