@@ -1,14 +1,16 @@
 section.scroll-container {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
   white-space: nowrap;
   background: transparent;
   height: 100%;
-  overflow-x: hidden;
   margin-top: 50px;
-  overscroll-behavior-inline: contain;
 }
 section.scroll-container .gridscroll {
   display: inline-block;
-  overflow-x: auto;
+  overflow-x: scroll;
+  max-width: 100%;
   overscroll-behavior-inline: contain;
   padding: 0px 24px;
 }
@@ -16,6 +18,10 @@ section.scroll-container .gridscroll img {
   max-width: 382px;
   max-height: 539px;
   padding: 0px;
+  margin: -3px;
+}
+section.scroll-container .gridscroll img:last-child {
+  transform: scaleX(-1);
 }
 section.scroll-container .text-container {
   overflow: hidden;
@@ -24,6 +30,7 @@ section.scroll-container .text-container {
   grid-template-rows: 1fr 1fr 1fr;
   max-height: 108px;
   margin: 0 24px;
+  flex: 1;
 }
 section.scroll-container .text-container .heart-container {
   grid-column: 2;
@@ -74,6 +81,69 @@ section.scroll-container .text-container strong {
   justify-self: flex-end;
   align-self: center;
 }
-button.buy-now-btn {
+section.scroll-container button.buy-now-btn {
   display: none;
+  width: 115px;
+  height: 43px;
+  background-color: var(--color-greenly);
+  color: var(--color-white);
+  border-radius: 16px;
+  border: none;
+  grid-column: 3;
+  grid-row: 3;
+  align-self: center;
+  justify-self: flex-end;
+}
+section.scroll-container button.buy-now-btn:hover {
+  background-color: var(--color-naturegreen);
+}
+
+@media screen and (min-width: 430px) {
+  section.scroll-container {
+    display: grid;
+    grid-template-rows: 1fr 296px;
+  }
+  section.scroll-container .gridscroll {
+    margin: 0 auto;
+    overflow-x: visible;
+  }
+  section.scroll-container .gridscroll img {
+    max-width: 655px;
+    max-height: 920px;
+  }
+  section.scroll-container .text-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 64px;
+    max-height: 239px;
+  }
+  section.scroll-container button.buy-now-btn {
+    display: inline-block;
+  }
+
+  section.scroll-container .text-container h2 {
+    font-size: 3.75rem;
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  section.scroll-container .text-container p {
+    font-size: 1.875rem;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+  }
+  section.scroll-container .text-container strong {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: center;
+    font-size: 2.5rem;
+  }
+  section.scroll-container .text-container .heart-container {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  section.scroll-container .text-container .heart-container svg {
+    height: 32px;
+    width: 37px;
+  }
 }

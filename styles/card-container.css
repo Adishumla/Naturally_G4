@@ -89,6 +89,7 @@ article.card .text-container p {
   grid-column: 1;
   grid-row: 3;
   align-self: center;
+  font-weight: 400;
 }
 article.card .text-container strong {
   grid-column: 2;
@@ -98,4 +99,7 @@ article.card .text-container strong {
 }
 .closer {
   margin-top: -40px;
+}
+section.card-container button.buy-now-btn {
+  display: none;
 }
