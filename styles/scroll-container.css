@@ -21,7 +21,7 @@ section.scroll-container .text-container {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   max-height: 108px;
-  margin: 0 16px;
+  margin: 0 24px;
 }
 section.scroll-container .text-container .heart-container {
   grid-column: 2;
