@@ -72,3 +72,6 @@ section.scroll-container .text-container strong {
   justify-self: flex-end;
   align-self: center;
 }
+button.buy-now-btn {
+  display: none;
+}
