@@ -5,10 +5,11 @@ nav.drop-down {
   width: 64%;
   left: 0px;
   top: 65px;
-  transform: translateX(-100%);
+  transform: translateX(-105%);
   background-color: white;
   transition: transform 0.3s ease-in-out;
   z-index: 999;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 nav.drop-down.active {
   transform: translateX(0%);
