@@ -1,20 +1,74 @@
-.scroll-container {
-  overflow: auto;
+section.scroll-container {
   white-space: nowrap;
   background: transparent;
   height: 100%;
+  overflow-x: hidden;
   margin-top: 50px;
-  overflow-x: auto;
   overscroll-behavior-inline: contain;
 }
-
-.gridscroll {
+section.scroll-container .gridscroll {
   display: inline-block;
-  overflow-x: auto;
+  overflow-x: scroll;
   overscroll-behavior-inline: contain;
 }
-
-.gridscroll img {
+section.scroll-container .gridscroll img {
   margin: -3px;
   padding: 0px;
+}
+section.scroll-container .text-container {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  max-height: 108px;
+  margin: 0 16px;
+}
+section.scroll-container .text-container .heart-container {
+  grid-column: 2;
+  grid-row: 1;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+section.scroll-container .text-container .heart-container svg {
+  position: absolute;
+}
+section.scroll-container .text-container .heart-container svg.outline path {
+  fill: #87bcdf;
+  fill-opacity: 1;
+  z-index: 1;
+}
+section.scroll-container .text-container .heart-container svg.background path {
+  fill: #87bcdf;
+  fill-opacity: 0;
+}
+section.scroll-container
+  .text-container
+  div.heart-container.active
+  svg.background
+  path {
+  fill-opacity: 1;
+}
+section.scroll-container .text-container h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  grid-column: 1;
+  grid-row: 2;
+  align-self: center;
+}
+section.scroll-container .text-container p {
+  font-size: 1.25rem;
+  margin: 0;
+  grid-column: 1;
+  grid-row: 3;
+  align-self: center;
+}
+section.scroll-container .text-container strong {
+  grid-column: 2;
+  grid-row: 3;
+  justify-self: flex-end;
+  align-self: center;
 }
