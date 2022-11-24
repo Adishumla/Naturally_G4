@@ -1,7 +1,8 @@
 :root {
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-ice-blue: #87bcdf + #d8d8d8;
+  --color-ice-blue: linear-gradient(#87bcdf 100%, #d8d8d8 20%),
+    linear-gradient(white 100%, white 20%);
 }
 
 * {

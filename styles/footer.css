@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #b5b5b5;
+  background: var(--color-ice-blue);
   margin: 20px;
   color: #ffffff;
   height: 381px;
