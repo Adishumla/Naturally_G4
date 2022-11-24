@@ -104,3 +104,37 @@
   margin: 0;
   padding-bottom: 32px;
 }
+
+@media (min-width: 768px) {
+  .sign-up h2 {
+    font-size: 60px;
+    font-weight: 500;
+    width: 620px;
+    height: 288px;
+    padding: 0;
+  }
+  .sign-up {
+    margin: 64px;
+    height: 684px;
+  }
+  .sign-up-container {
+    width: 643px;
+    border-bottom: 4px solid #ffffff;
+    padding-bottom: 5px;
+  }
+  .sign-up-container input {
+    font-size: 24px;
+    width: 620px;
+  }
+  .sign-up-container input::placeholder {
+    font-size: 24px;
+  }
+  .sign-up-container button {
+    width: 24px;
+    height: 24px;
+  }
+  .sign-up-container button img {
+    width: 14px;
+    height: 20px;
+  }
+}
