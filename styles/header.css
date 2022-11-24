@@ -12,7 +12,7 @@ header.navbar {
 
 .nav-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: center;
   justify-items: center;
@@ -37,21 +37,24 @@ header.navbar {
   width: 30px;
   height: 3px;
   background-color: #000000;
-  margin: 6px 0;
+  margin: 9px 0;
   transition: 0.4s;
   border-radius: 5px;
 }
-/*active line create an N OBS, change to X*/
-.active .line1 {
-  transform: rotate(-90deg) translate(-9px, 9.4px);
+/*active line create an X*/
+
+.active .line:nth-child(1) {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
-.active .line2 {
-  transform: rotate(55deg) translate(-2px, 2px);
-  width: 35px;
-  height: 5px;
+
+.active .line:nth-child(2) {
+  opacity: 0;
 }
-.active .line3 {
-  transform: rotate(90deg) translate(-9px, 10px);
+
+.active .line:nth-child(3) {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-11px, -8px);
 }
 
 .heart {
