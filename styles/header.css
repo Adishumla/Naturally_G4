@@ -1,7 +1,7 @@
 /*header start*/
 header.navbar {
   position: -webkit-absolute;
-  background-color: #333;
+  background-color: var(--color-white);
   position: fixed;
   top: 0;
   width: 100%;
@@ -52,4 +52,10 @@ header.navbar {
 }
 .active .line3 {
   transform: rotate(90deg) translate(-9px, 10px);
+}
+
+.heart {
+  width: 27px;
+  height: 24px;
+  transition: 0.4s;
 }
