@@ -121,3 +121,15 @@ function elementInViewport() {
 }
 
 /* get scroll in px */
+
+/* remove desktop-info when scrolling down 50px and come back when scrolling to the top */
+const desktopInfo = document.querySelector(".desktop-info");
+const desktopInfoHeight = desktopInfo.offsetHeight;
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > desktopInfoHeight) {
+    desktopInfo.classList.add("desktop-info-hidden");
+  } else {
+    desktopInfo.classList.remove("desktop-info-hidden");
+  }
+});
