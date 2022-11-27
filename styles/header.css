@@ -83,7 +83,9 @@ header.navbar {
 .nav-desktop-logo {
   display: none;
 }
-
+.desktop-info {
+  display: none;
+}
 @media (min-width: 768px) {
   header .navbar {
   }
