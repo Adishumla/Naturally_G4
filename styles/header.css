@@ -89,6 +89,9 @@ header.navbar {
 @media (min-width: 768px) {
   header .navbar {
   }
+  .hero-span {
+    padding-top: 140px;
+  }
   .nav-desktop {
     display: block;
     display: grid;
