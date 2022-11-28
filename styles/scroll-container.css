@@ -6,19 +6,20 @@ section.scroll-container {
   background: transparent;
   height: 100%;
   margin-top: 50px;
+  margin-right: 24px;
+  margin-left: 24px;
 }
 section.scroll-container .gridscroll {
   display: inline-block;
   overflow-x: scroll;
   width: 100%;
   overscroll-behavior-inline: contain;
-  padding: 0px 24px;
 }
 section.scroll-container .gridscroll img {
   max-width: 382px;
   max-height: 539px;
   padding: 0px;
-  margin: -3px;
+  margin: 0px -3px;
 }
 section.scroll-container .gridscroll img:last-child {
   transform: scaleX(-1);
@@ -102,17 +103,20 @@ section.scroll-container button.buy-now-btn:hover {
   section.scroll-container {
     display: grid;
     grid-template-rows: 1fr 296px;
+    justify-content: center;
+    margin: 50px 64px 0px 64px;
   }
   section.scroll-container .gridscroll {
-    margin: 0 auto;
+    overflow-x: hidden;
   }
   section.scroll-container .gridscroll img {
-    max-width: 655px;
-    max-height: 920px;
+    max-width: none;
+    max-height: none;
+    min-width: 48%;
   }
   section.scroll-container .text-container {
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 0px 64px;
+    margin: 0;
     max-height: 239px;
   }
   section.scroll-container button.buy-now-btn {
@@ -148,11 +152,6 @@ section.scroll-container button.buy-now-btn:hover {
 }
 @media screen and (min-width: 1350px) {
   section.scroll-container .gridscroll img {
-    max-width: 900px;
-    max-height: 100%;
     object-fit: fill;
-  }
-  section.scroll-container .gridscroll {
-    width: 100%;
   }
 }
