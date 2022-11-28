@@ -10,7 +10,7 @@ section.scroll-container {
 section.scroll-container .gridscroll {
   display: inline-block;
   overflow-x: scroll;
-  max-width: 100%;
+  width: 100%;
   overscroll-behavior-inline: contain;
   padding: 0px 24px;
 }
@@ -105,7 +105,6 @@ section.scroll-container button.buy-now-btn:hover {
   }
   section.scroll-container .gridscroll {
     margin: 0 auto;
-    overflow-x: visible;
   }
   section.scroll-container .gridscroll img {
     max-width: 655px;
@@ -145,5 +144,15 @@ section.scroll-container button.buy-now-btn:hover {
   section.scroll-container .text-container .heart-container svg {
     height: 32px;
     width: 37px;
+  }
+}
+@media screen and (min-width: 1350px) {
+  section.scroll-container .gridscroll img {
+    max-width: 900px;
+    max-height: 100%;
+    object-fit: fill;
+  }
+  section.scroll-container .gridscroll {
+    width: 100%;
   }
 }
