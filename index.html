@@ -18,13 +18,13 @@
   <body>
     <nav class="drop-down">
       <ul>
-        <li>Kläder</li>
-        <li>Skor</li>
-        <li>Hållbarhet</li>
+        <li data-lang-key="header-clothes"></li>
+        <li data-lang-key="header-shoes"></li>
+        <li data-lang-key="header-env"></li>
       </ul>
       <div class="drop-down-footer">
         <p>Logga in</p>
-        <p><a href="">SV</a>/<a href="">EN</a></p>
+        <p><a class="sv" href="#">SV</a>/<a class="en" href="#">EN</a></p>
       </div>
     </nav>
     <button
@@ -36,20 +36,20 @@
     <!-- fixed navbar -->
     <header class="navbar">
       <section class="desktop-info">
-        <p>Login</p>
+        <p data-lang-key="login-btn"></p>
         <div class="desktop-info-center">
-          <p>Bli medlem och få 10%</p>
-          <p>Fri frakt och retur</p>
-          <p>1-3 dagars leverans</p>
+          <p data-lang-key="discount-text"></p>
+          <p data-lang-key="returns-text"></p>
+          <p data-lang-key="shipping-text"></p>
         </div>
         <button>SV/EN</button>
       </section>
       <div class="nav-container">
         <p class="nav-desktop-logo">Naturally</p>
         <div class="nav-desktop">
-          <p>Kläder</p>
-          <p>Skor</p>
-          <p>Hållbarhet</p>
+          <p data-lang-key="header-clothes"></p>
+          <p data-lang-key="header-shoes"></p>
+          <p data-lang-key="header-env"></p>
         </div>
         <!--hamburger -->
         <div class="hamburger" onclick="this.classList.toggle('active')">
@@ -84,7 +84,7 @@
     <section class="carousel">
       <span class="hero-span">
         <h1><span>N</span>ATURALLY X ALLNATUR</h1>
-        <button>Shoppa kollektionen</button>
+        <button data-lang-key="shop-button"></button>
       </span>
       <div class="desktop-hero">
         <div class="desktop-hero-img-container">
@@ -124,10 +124,12 @@
           <img class="outline" src="images/heart-outline.svg" alt="" />
           <img class="background" src="images/heart-background.svg" alt="" />
         </div>
-        <h2>Tröja</h2>
-        <p>Återvunnet material</p>
-        <strong>1 024:-</strong>
-        <button class="buy-now-btn">Köp nu</button>
+        <h2 data-lang-key="shirt-text"></h2>
+        <p data-lang-key="shirt-material"></p>
+        <strong data-lang-key="shirt-price"></strong>
+        <button class="buy-now-btn" data-lang-key="buy-button">
+          <!-- Köp nu -->
+        </button>
       </div>
     </section>
     <!-- card h2, span, img -->
@@ -149,10 +151,10 @@
             <img class="background" src="images/heart-background.svg" alt="" />
           </div>
           <!-- Below children not aligned to center by its parent like the .card items further down -->
-          <h2>Tröja</h2>
-          <p>Återvunnet material</p>
-          <strong>1 024:-</strong>
-          <button class="buy-now-btn">Köp nu</button>
+          <h2 data-lang-key="shoe-text"></h2>
+          <p data-lang-key="shoe-material"></p>
+          <strong data-lang-key="shoe-price"></strong>
+          <button class="buy-now-btn" data-lang-key="buy-button"></button>
         </div>
       </article>
       <article class="card">
@@ -167,10 +169,10 @@
             <img class="background" src="images/heart-background.svg" alt="" />
           </div>
           <!-- Below children not aligned to center by its parent like the .card items further down -->
-          <h2>Tröja</h2>
-          <p>Återvunnet material</p>
-          <strong>1 024:-</strong>
-          <button class="buy-now-btn">Köp nu</button>
+          <h2 data-lang-key="jacket-text"></h2>
+          <p data-lang-key="jacket-material"></p>
+          <strong data-lang-key="jacket-price"></strong>
+          <button class="buy-now-btn" data-lang-key="buy-button"></button>
         </div>
       </article>
       <article class="card">
@@ -197,16 +199,16 @@
             <img class="background" src="images/heart-background.svg" alt="" />
           </div>
           <!-- Below children not aligned to center by its parent like the .card items further down -->
-          <h2>Tröja</h2>
-          <p>Återvunnet material</p>
-          <strong>1 024:-</strong>
-          <button class="buy-now-btn">Köp nu</button>
+          <h2 data-lang-key="dress-name"></h2>
+          <p data-lang-key="dress-material"></p>
+          <strong data-lang-key="dress-price"></strong>
+          <button class="buy-now-btn" data-lang-key="buy-button"></button>
         </div>
       </article>
     </section>
     <!--sign up card -->
     <article class="sign-up">
-      <h2>Bli medlem och få 10% på din första order</h2>
+      <h2 data-lang-key="discount-text-long"></h2>
       <div class="sign-up-container">
         <input type="text" placeholder="Fyll i epostadress" />
         <button>
@@ -217,12 +219,12 @@
     <!-- footer -->
     <footer class="footer">
       <span class="footer-left">
-        <p>Kontakta oss</p>
-        <p class="footer-only-desktop">FAQ</p>
-        <p>Om oss</p>
-        <p>Support</p>
+        <p data-lang-key="footer-contact">Kontakta oss</p>
+        <p class="footer-only-desktop" data-lang-key="footer-faq">FAQ</p>
+        <p data-lang-key="footer-about">Om oss</p>
+        <p data-lang-key="footer-support">Support</p>
         <p class="footer-only-desktop">Instagram</p>
-        <p>Karriär</p>
+        <p data-lang-key="footer-career">Karriär</p>
         <span class="footer-only-desktop socials">
           <img src="images/facebook.svg" alt="" />
           <img src="images/youtube.svg" alt="" />
