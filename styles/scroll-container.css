@@ -37,11 +37,12 @@ section.scroll-container .text-container .heart-container {
   grid-row: 1;
   position: relative;
   height: 40px;
-  width: 100%;
+  width: 40px;
   display: flex;
   justify-content: end;
   align-items: center;
   overflow-x: visible;
+  justify-self: end;
 }
 section.scroll-container .text-container .heart-container img {
   position: absolute;
@@ -62,6 +63,7 @@ section.scroll-container .text-container .heart-container img.background {
   50% {
     transform: scale(1.2);
     opacity: 1;
+    padding-right: 2.5px;
   }
   100% {
     transform: scale(1);

@@ -133,3 +133,12 @@ window.addEventListener("scroll", () => {
     desktopInfo.classList.remove("desktop-info-hidden");
   }
 });
+
+/* make all heart-containers clickable */
+const heartContainers = document.querySelectorAll(".heart-container");
+
+heartContainers.forEach((heartContainer) => {
+  heartContainer.addEventListener("click", () => {
+    heartContainer.classList.toggle("active");
+  });
+});
