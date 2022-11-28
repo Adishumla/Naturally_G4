@@ -25,7 +25,7 @@ section.scroll-container .gridscroll img:last-child {
   transform: scaleX(-1);
 }
 section.scroll-container .text-container {
-  overflow: hidden;
+  overflow-x: hidden;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
