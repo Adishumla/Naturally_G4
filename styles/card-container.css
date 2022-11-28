@@ -35,7 +35,7 @@ article.card .card-img-2 {
 article.card .text-container {
   overflow: hidden;
   display: grid;
-  grid-template-columns: 11fr 4fr;
+  grid-template-columns: 282px 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   max-height: 108px;
 }
@@ -73,21 +73,22 @@ article.card .text-container .heart-container {
   align-items: center;
 }
 
-article.card .text-container .heart-container svg {
+article.card .text-container .heart-container img {
   position: absolute;
 }
-article.card .text-container .heart-container svg.outline path {
+article.card .text-container .heart-container img.outline {
   fill: #87bcdf;
-  fill-opacity: 1;
+  opacity: 1;
   z-index: 1;
 }
-article.card .text-container .heart-container svg.background path {
+article.card .text-container .heart-container img.background {
   fill: #87bcdf;
-  fill-opacity: 0;
+  opacity: 0;
   transition: 1.2s;
 }
-article.card .text-container div.heart-container.active svg.background path {
-  fill-opacity: 1;
+article.card .text-container div.heart-container.active img.background {
+  opacity: 1;
+  animation: heart 1s ease;
 }
 article.card .text-container h2 {
   font-size: 1.25rem;
@@ -142,10 +143,21 @@ section.card-container button.buy-now-btn {
   article.card .text-container p {
     grid-column: 1;
     grid-row: 2;
+    font-size: 1.875rem;
   }
   article.card .text-container strong {
     grid-column: 2;
     grid-row: 3;
+    font-size: 1.75rem;
+  }
+  article.card .text-container .heart-container img {
+    height: 32px;
+    width: 37px;
+  }
+}
+@media screen and (min-width: 1015px) {
+  article.card .text-container strong {
+    font-size: 2.5rem;
   }
 }
 /* .card span {

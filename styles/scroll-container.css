@@ -6,8 +6,6 @@ section.scroll-container {
   background: transparent;
   height: 100%;
   margin-top: 50px;
-  margin-right: 24px;
-  margin-left: 24px;
 }
 section.scroll-container .gridscroll {
   display: inline-block;
@@ -19,10 +17,11 @@ section.scroll-container .gridscroll img {
   max-width: 382px;
   max-height: 539px;
   padding: 0px;
-  margin: 0px -3px;
+  margin: 0px -3px 0px 0px;
 }
 section.scroll-container .gridscroll img:last-child {
   transform: scaleX(-1);
+  margin: 0px 0px 0px -3px;
 }
 section.scroll-container .text-container {
   overflow-x: hidden;
@@ -42,25 +41,39 @@ section.scroll-container .text-container .heart-container {
   display: flex;
   justify-content: end;
   align-items: center;
+  overflow-x: visible;
 }
-section.scroll-container .text-container .heart-container svg {
+section.scroll-container .text-container .heart-container img {
   position: absolute;
 }
-section.scroll-container .text-container .heart-container svg.outline path {
-  fill: #87bcdf;
-  fill-opacity: 1;
-  z-index: 1;
+section.scroll-container .text-container .heart-container img.outline {
+  opacity: 1;
+  z-index: 99;
 }
-section.scroll-container .text-container .heart-container svg.background path {
-  fill: #87bcdf;
-  fill-opacity: 0;
+section.scroll-container .text-container .heart-container img.background {
+  opacity: 0;
+  transition: 1s ease;
+}
+@keyframes heart {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 section.scroll-container
   .text-container
   div.heart-container.active
-  svg.background
-  path {
-  fill-opacity: 1;
+  img.background {
+  opacity: 1;
+  animation: heart 1s ease;
 }
 section.scroll-container .text-container h2 {
   font-size: 1.25rem;
@@ -145,7 +158,7 @@ section.scroll-container button.buy-now-btn:hover {
     grid-column: 3;
     grid-row: 1;
   }
-  section.scroll-container .text-container .heart-container svg {
+  section.scroll-container .text-container .heart-container img {
     height: 32px;
     width: 37px;
   }
