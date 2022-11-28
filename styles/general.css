@@ -13,7 +13,12 @@
   box-sizing: border-box;
 }
 body {
-  padding-top: 140px;
   margin: 0;
   font-family: futura, sans-serif;
+}
+
+@media (min-width: 600px) {
+  body {
+    padding-top: 140px;
+  }
 }
