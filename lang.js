@@ -130,4 +130,4 @@ if (addTranslations === "en") {
   input2.placeholder = "Fyll i epostadress";
 }
 
-console.log(lang);
+console.log(langSet); //always false
