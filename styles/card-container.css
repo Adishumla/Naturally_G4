@@ -278,8 +278,6 @@ section.card-container button.buy-now-btn {
     margin-bottom: 266px;
     margin-top: 104px;
   }
-  article.card .carousel {
-  }
   article.card.last-card .card-img-1 {
     grid-column: 1;
     grid-row: 1 / 3;
