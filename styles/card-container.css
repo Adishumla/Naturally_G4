@@ -38,14 +38,18 @@ article.card .text-container {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   max-height: 108px;
+  margin-top: 24px;
 }
 /* first child */
 @media screen and (min-width: 430px) {
   article.card:first-of-type {
     display: grid;
-    grid-template-rows: 7fr 3fr;
+    grid-template-rows: 1fr 239px;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    padding-top: 0;
+    margin-top: 90px;
+    column-gap: 24px;
+    max-height: 920px;
   }
   article.card:first-of-type .card-img-1 {
     grid-column: 1;
@@ -70,7 +74,10 @@ article.card .text-container {
     display: grid;
     grid-template-rows: 7fr 3fr;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    column-gap: 24px;
+    padding-top: 0;
+    max-height: 920px;
+    margin-top: 104px;
   }
   article.card:nth-of-type(2) .card-img-1 {
     grid-column: 2;
@@ -137,9 +144,6 @@ article.card .text-container strong {
   justify-self: flex-end;
   align-self: center;
 }
-/* .closer {
-  margin-top: -40px;
-} */
 section.card-container button.buy-now-btn {
   display: none;
 }
@@ -191,7 +195,7 @@ section.card-container button.buy-now-btn {
 @media screen and (max-width: 429px) {
   article.card.last-card {
     height: 623px;
-    margin: 88px 0px;
+    margin: 104px 0px 88px 0px;
     padding-top: 0;
   }
   article.card .carousel {
@@ -258,32 +262,21 @@ section.card-container button.buy-now-btn {
   }
 }
 @media screen and (min-width: 430px) {
-  article.card .carousel-nav {
+  article.card.mobile-only {
     display: none;
-  }
-  article.card.last-card .text-container {
-    max-height: 239px;
-  }
-  article.card .carousel-button,
-  article.card .carousel-button-selected,
-  article.card .carousel-nav,
-  article.card .second .carousel-nav,
-  article.card .second .carousel-button {
-    display: none;
-  }
-
-  article.card .second .carousel-img,
-  article.card .carousel-item {
-    display: inline-block;
   }
 }
-
+/* Last card desktop view */
 @media screen and (min-width: 430px) {
   article.card.last-card {
     display: grid;
-    grid-template-rows: 2fr 6fr 2fr;
+    grid-template-rows: 214px 1fr 214px;
     grid-template-columns: 1fr 1fr;
     max-height: 1191px;
+    column-gap: 24px;
+    padding: 0px;
+    margin-bottom: 266px;
+    margin-top: 104px;
   }
   article.card .carousel {
   }
@@ -296,6 +289,7 @@ section.card-container button.buy-now-btn {
     grid-column: 2;
     grid-row: 2 / 4;
     height: 920px;
+    object-fit: fill;
   }
   article.card.last-card .text-container {
     grid-column: 1;

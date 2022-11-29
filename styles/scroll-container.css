@@ -5,6 +5,7 @@ section.scroll-container {
   white-space: nowrap;
   background: transparent;
   height: 100%;
+  max-height: 1171px;
   margin-top: 50px;
 }
 section.scroll-container .gridscroll {
@@ -117,9 +118,9 @@ section.scroll-container button.buy-now-btn:hover {
 @media screen and (min-width: 430px) {
   section.scroll-container {
     display: grid;
-    grid-template-rows: 1fr 296px;
+    grid-template-rows: 1fr 239px;
     justify-content: center;
-    margin: 50px 64px 0px 64px;
+    margin: 104px 64px 0px 64px;
   }
   section.scroll-container .gridscroll {
     overflow-x: hidden;
