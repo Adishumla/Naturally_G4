@@ -203,7 +203,6 @@ section.card-container button.buy-now-btn {
   article.card .carousel {
     position: relative;
     max-height: 539px;
-    height: none;
   }
   article.card .carousel-item {
     font-family: "Quicksand", sans-serif;
