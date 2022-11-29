@@ -16,7 +16,8 @@ section.card-container {
   padding-top: 24px;
 }
 article.card {
-  padding-top: 64px;
+  /* padding-top: 64px; */
+  margin-top: 64px;
   display: inline-block;
   width: 100%;
 }
@@ -36,7 +37,7 @@ article.card .text-container {
   overflow: hidden;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   max-height: 108px;
   margin-top: 24px;
 }
@@ -127,20 +128,20 @@ article.card .text-container h2 {
   font-size: 1.25rem;
   margin: 0;
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1;
   align-self: center;
 }
 article.card .text-container p {
   font-size: 1.25rem;
   margin: 0;
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 2;
   align-self: center;
   font-weight: 400;
 }
 article.card .text-container strong {
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 2;
   justify-self: flex-end;
   align-self: center;
 }
@@ -197,10 +198,12 @@ section.card-container button.buy-now-btn {
     height: 623px;
     margin: 104px 0px 88px 0px;
     padding-top: 0;
+    display: none;
   }
   article.card .carousel {
     position: relative;
     max-height: 539px;
+    height: none;
   }
   article.card .carousel-item {
     font-family: "Quicksand", sans-serif;
@@ -208,6 +211,9 @@ section.card-container button.buy-now-btn {
     font-size: 2em;
     color: #ffffff;
     display: none;
+  }
+  article.card .carousel-item.second {
+    height: 100%;
   }
   article.card .carousel-img {
     width: 100%;
@@ -264,6 +270,9 @@ section.card-container button.buy-now-btn {
 @media screen and (min-width: 430px) {
   article.card.mobile-only {
     display: none;
+  }
+  article.card.last-card {
+    display: inline-block;
   }
 }
 /* Last card desktop view */

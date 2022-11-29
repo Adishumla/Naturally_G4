@@ -5,7 +5,7 @@ section.scroll-container {
   white-space: nowrap;
   background: transparent;
   height: 100%;
-  max-height: 1171px;
+  max-height: 623px;
   margin-top: 50px;
 }
 section.scroll-container .gridscroll {
@@ -13,6 +13,8 @@ section.scroll-container .gridscroll {
   overflow-x: scroll;
   width: 100%;
   overscroll-behavior-inline: contain;
+  margin-bottom: 0px;
+  overflow-y: hidden;
 }
 section.scroll-container .gridscroll img {
   max-width: 382px;
@@ -28,9 +30,9 @@ section.scroll-container .text-container {
   overflow-x: hidden;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   max-height: 108px;
-  margin: 0 24px;
+  margin: 24px 24px 0px 24px;
   flex: 1;
 }
 section.scroll-container .text-container .heart-container {
@@ -82,19 +84,19 @@ section.scroll-container .text-container h2 {
   font-size: 1.25rem;
   margin: 0;
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1;
   align-self: center;
 }
 section.scroll-container .text-container p {
   font-size: 1.25rem;
   margin: 0;
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 2;
   align-self: center;
 }
 section.scroll-container .text-container strong {
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 2;
   justify-self: flex-end;
   align-self: center;
 }
@@ -121,6 +123,7 @@ section.scroll-container button.buy-now-btn:hover {
     grid-template-rows: 1fr 239px;
     justify-content: center;
     margin: 104px 64px 0px 64px;
+    max-height: 1171px;
   }
   section.scroll-container .gridscroll {
     overflow-x: hidden;
@@ -132,7 +135,7 @@ section.scroll-container button.buy-now-btn:hover {
   }
   section.scroll-container .text-container {
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 0;
+    margin: 32px 0px 0px 0px;
     max-height: 239px;
   }
   section.scroll-container button.buy-now-btn {
