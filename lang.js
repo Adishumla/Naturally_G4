@@ -16,21 +16,21 @@ const translations = {
     "shipping-text": "1-3 dagars leverans",
     "login-btn": "Logga in",
 
-    "shirt-text": "Charlie",
-    "shirt-material": "Återvunnet material",
-    "shirt-price": "1 024:-",
+    "shirt-text": "Arie",
+    "shirt-material": "Återvunnen bomull",
+    "shirt-price": "1 499:-",
 
     "shoe-text": "Billie",
-    "shoe-material": "Återvunnet material",
-    "shoe-price": "1 024:-",
+    "shoe-material": "Svampläder",
+    "shoe-price": "1 899:-",
 
-    "jacket-text": "Kjol",
-    "jacket-material": "Återvunnet material",
-    "jacket-price": "1 024:-",
+    "jacket-text": "Charlie",
+    "jacket-material": "Återvunnen ull",
+    "jacket-price": "1 299:-",
 
-    "dress-name": "Arie",
-    "dress-material": "Återvunnet material",
-    "dress-price": "1 024:-",
+    "dress-name": "jackie",
+    "dress-material": "Linné",
+    "dress-price": "1 599:-",
 
     "discount-text-long": "Bli medlem och få 10% rabatt på ditt första köp",
 
@@ -55,21 +55,21 @@ const translations = {
     "shipping-text": "1-3 day delivery",
     "login-btn": "Login",
 
-    "shirt-text": "Charlie",
-    "shirt-material": "Recycled material",
-    "shirt-price": "102:-",
+    "shirt-text": "Arie",
+    "shirt-material": "Recycled cotton",
+    "shirt-price": "1 499:-",
 
     "shoe-text": "Billie",
-    "shoe-material": "Recycled material",
-    "shoe-price": "102:-",
+    "shoe-material": "Mushroom leather",
+    "shoe-price": "1 899:-",
 
-    "jacket-text": "Dress",
-    "jacket-material": "Recycled material",
-    "jacket-price": "102:-",
+    "jacket-text": "Charlie",
+    "jacket-material": "Recycled wool",
+    "jacket-price": "1 299:-",
 
-    "dress-name": "Arie",
-    "dress-material": "Recycled material",
-    "dress-price": "102:-",
+    "dress-name": "jackie",
+    "dress-material": "Linen",
+    "dress-price": "1 599:-",
 
     "discount-text-long": "Become a member and get 10% off your first purchase",
 
@@ -97,6 +97,8 @@ button.addEventListener("click", () => {
 
 const sv_lang = document.querySelector(".drop-down-footer .sv");
 const en_lang = document.querySelector(".drop-down-footer .en");
+const sv_lang_desktop = document.querySelector(".desktop-info .sv");
+const en_lang_desktop = document.querySelector(".desktop-info .en");
 
 sv_lang.addEventListener("click", () => {
   addTranslations("sv");
@@ -104,6 +106,19 @@ sv_lang.addEventListener("click", () => {
 });
 
 en_lang.addEventListener("click", () => {
+  addTranslations("en");
+  langSet = true;
+});
+if (langSet === false) {
+  addTranslations("sv");
+}
+
+sv_lang_desktop.addEventListener("click", () => {
+  addTranslations("sv");
+  langSet = true;
+});
+
+en_lang_desktop.addEventListener("click", () => {
   addTranslations("en");
   langSet = true;
 });
