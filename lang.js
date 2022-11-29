@@ -97,6 +97,8 @@ button.addEventListener("click", () => {
 
 const sv_lang = document.querySelector(".drop-down-footer .sv");
 const en_lang = document.querySelector(".drop-down-footer .en");
+const sv_lang_desktop = document.querySelector(".desktop-info .sv");
+const en_lang_desktop = document.querySelector(".desktop-info .en");
 
 sv_lang.addEventListener("click", () => {
   addTranslations("sv");
@@ -104,6 +106,19 @@ sv_lang.addEventListener("click", () => {
 });
 
 en_lang.addEventListener("click", () => {
+  addTranslations("en");
+  langSet = true;
+});
+if (langSet === false) {
+  addTranslations("sv");
+}
+
+sv_lang_desktop.addEventListener("click", () => {
+  addTranslations("sv");
+  langSet = true;
+});
+
+en_lang_desktop.addEventListener("click", () => {
   addTranslations("en");
   langSet = true;
 });
