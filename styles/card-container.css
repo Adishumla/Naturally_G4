@@ -64,9 +64,10 @@ article.card .text-container {
     grid-column: 2;
     grid-row: 1;
     /* height: 649px; */
-    height: 100%;
+    height: auto;
     width: 100%;
-    aspect-ratio: 1/1;
+    /* aspect-ratio: 1/1; */
+    object-fit: fill;
   }
   article.card:first-of-type .text-container {
     grid-template-columns: 282px 1fr;
