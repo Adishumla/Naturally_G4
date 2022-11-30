@@ -66,6 +66,17 @@ window.addEventListener("click", (e) => {
   }
 });
 
+const video = document.querySelector("video");
+
+video.addEventListener("mouseleave", () => {
+  video.pause();
+});
+
+// play video when hovering
+video.addEventListener("mouseover", () => {
+  video.play();
+});
+
 //navbar
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 /* let prevScrollpos = window.pageYOffset;

@@ -71,6 +71,7 @@ section.carousel {
   height: 14px;
   background: transparent;
   border: 1px solid var(--color-blueberry);
+  box-shadow: 0 0 20px 2px #000000;
 }
 /* carousel end */
 
