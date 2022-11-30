@@ -41,9 +41,34 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
   buttons[0].classList.add("carousel-button-selected");
 });
 
+/* hide navbar when scrolling down and show when scrolling up */
+const navbar = document.querySelector(".navbar");
+const navbarHeight = navbar.getBoundingClientRect().height;
+let prevScrollpos = window.pageYOffset;
+
+window.addEventListener("scroll", () => {
+  const currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos || currentScrollPos < navbarHeight) {
+    navbar.style.top = "0";
+  } else {
+    navbar.style.top = "-" + navbarHeight + "px";
+    dropDown.classList.remove("active");
+    hamburger.classList.remove("active");
+  }
+  prevScrollpos = currentScrollPos;
+});
+
+/* close drop-down menu when clicking outside of it */
+window.addEventListener("click", (e) => {
+  if (e.target !== dropDown && e.target !== hamburger) {
+    dropDown.classList.remove("active");
+    hamburger.classList.remove("active");
+  }
+});
+
 //navbar
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-let prevScrollpos = window.pageYOffset;
+/* let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
@@ -52,7 +77,7 @@ window.onscroll = function () {
     document.getElementByClassName("navbar").style.top = "-50px";
   }
   prevScrollpos = currentScrollPos;
-};
+}; */
 
 //gallery
 const slideGallery = document.querySelector(".slides");

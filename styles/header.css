@@ -125,6 +125,8 @@ header.navbar {
     grid-template-columns: 1fr 9fr 0.5fr 0.5fr 0.5fr;
     padding-left: 63px;
     padding-right: 63px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .desktop-info {
     display: flex;
