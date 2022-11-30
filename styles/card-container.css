@@ -241,6 +241,7 @@ section.card-container button.buy-now-btn {
   }
   article.card .second .carousel-nav {
     gap: 5px;
+    height: 20px;
   }
 
   article.card .carousel-nav {
