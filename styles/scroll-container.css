@@ -129,10 +129,11 @@ section.scroll-container button.buy-now-btn:hover {
     overflow-x: hidden;
     display: flex;
     justify-content: center;
+    max-width: 1312px;
   }
   section.scroll-container .gridscroll img {
-    max-width: none;
-    max-height: 655px;
+    max-width: 656px;
+    max-height: none;
     min-width: 48%;
   }
   section.scroll-container .text-container {
