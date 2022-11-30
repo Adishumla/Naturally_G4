@@ -82,13 +82,14 @@ section.carousel .carousel-button-selected {
 /* carousel end */
 
 /* hero text start */
-.hero-span {
+div.hero-span {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   font-family: "Encode Sans Condensed", sans-serif;
+  z-index: 9;
 }
 .hero-span h1 {
   font-size: 3em;
