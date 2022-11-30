@@ -127,10 +127,12 @@ section.scroll-container button.buy-now-btn:hover {
   }
   section.scroll-container .gridscroll {
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
   }
   section.scroll-container .gridscroll img {
     max-width: none;
-    max-height: none;
+    max-height: 655px;
     min-width: 48%;
   }
   section.scroll-container .text-container {
@@ -172,8 +174,8 @@ section.scroll-container button.buy-now-btn:hover {
     width: 37px;
   }
 }
-@media screen and (min-width: 1350px) {
+/* @media screen and (min-width: 1350px) {
   section.scroll-container .gridscroll img {
     object-fit: fill;
   }
-}
+} */
