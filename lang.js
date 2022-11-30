@@ -4,8 +4,6 @@ let langSet = false;
 
 const translations = {
   sv: {
-    "hero-title": "Hej jag är svensk",
-    "hero-subtitle": "en kortare text här",
     "buy-button": "köp nu",
     "header-clothes": "Kläder",
     "header-shoes": "Skor",
@@ -43,8 +41,6 @@ const translations = {
     /* "enter-email": "Fyll i epostadress", */
   },
   en: {
-    "hero-title": "Hello im english",
-    "hero-subtitle": "a shorter text here",
     "buy-button": "Buy now",
     "header-clothes": "Clothes",
     "header-shoes": "Shoes",
