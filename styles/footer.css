@@ -116,7 +116,14 @@
     height: 288px;
     padding: 0;
   }
+  .sign-up-section {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
   .sign-up {
+    max-width: 1312px;
     margin: 64px;
     height: 684px;
   }
