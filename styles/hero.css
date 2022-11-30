@@ -42,7 +42,7 @@ section.carousel {
   margin-top: -45px;
 }
 
-.carousel-nav {
+section.carousel .carousel-nav {
   width: 100%;
   padding: 20px 0;
   position: absolute;
@@ -55,23 +55,22 @@ section.carousel {
   gap: 20px;
 }
 
-.carousel-button {
+section.carousel .carousel-button {
   width: 10px;
   height: 10px;
   display: inline-block;
-  background: var(--color-ice-blue);
+  background: var(--color-white);
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.carousel-button-selected {
+section.carousel .carousel-button-selected {
   width: 14px;
   height: 14px;
   background: transparent;
-  border: 1px solid var(--color-blueberry);
-  box-shadow: 0 0 20px 2px #000000;
+  border: 1px solid var(--color-white);
 }
 /* carousel end */
 
