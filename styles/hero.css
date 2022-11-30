@@ -16,9 +16,15 @@ section.carousel {
   height: 100%;
   object-fit: cover;
 }
-
-.carousel-item-selected {
-  display: block;
+@media screen and (max-width: 430px) {
+  section.carousel .carousel-item-selected {
+    display: block;
+  }
+}
+@media screen and (min-width: 430px) {
+  section.carousel .carousel-nav {
+    visibility: hidden;
+  }
 }
 
 .second .carousel-button {
