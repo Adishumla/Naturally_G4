@@ -308,3 +308,19 @@ section.card-container button.buy-now-btn {
     max-height: 239px;
   }
 }
+/* Desktop view hover effects */
+@media screen and (min-width: 430px) {
+  img:not(.heart),
+  video {
+    filter: saturate(0);
+  }
+  .gridscroll:hover img {
+    filter: saturate(1);
+  }
+  img:not(.heart):hover,
+  video:hover {
+    filter: saturate(1);
+    /* transform: scale(1.05);
+    transition: 1.2s; */
+  }
+}

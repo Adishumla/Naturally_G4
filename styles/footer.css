@@ -112,20 +112,19 @@
   .sign-up h2 {
     font-size: 60px;
     font-weight: 500;
-    width: 620px;
     height: 288px;
-    padding: 0;
+    padding: 0px 140px;
   }
   .sign-up-section {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    width: 100%;
   }
   .sign-up {
     max-width: 1312px;
     margin: 64px;
     height: 684px;
+    padding: 0;
   }
   .sign-up-container {
     width: 643px;
