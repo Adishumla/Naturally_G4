@@ -153,4 +153,17 @@ div.hero-span {
     object-fit: cover;
     transition: all 0.3s ease;
   }
+  section.carousel {
+    display: flex;
+  }
+  div.hero-span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    transform: translate(-50%, -20%);
+  }
 }
