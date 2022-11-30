@@ -163,9 +163,14 @@
     margin-top: -70px;
     gap: 20px;
   }
+  .footer p {
+    padding-bottom: 15px;
+  }
   .socials {
     /* padding-top: 40px; */
     align-self: start;
+    display: flex;
+    gap: 24px;
   }
   .footer-left p {
     padding-bottom: 12px;
