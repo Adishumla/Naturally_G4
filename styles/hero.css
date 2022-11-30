@@ -16,12 +16,12 @@ section.carousel {
   height: 100%;
   object-fit: cover;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 768px) {
   section.carousel .carousel-item-selected {
     display: block;
   }
 }
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 768px) {
   section.carousel .carousel-nav {
     visibility: hidden;
   }
@@ -70,7 +70,7 @@ section.carousel .carousel-button {
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  /* transition in 0.3 sec and fade out 1 sec */
 }
 
 section.carousel .carousel-button-selected {

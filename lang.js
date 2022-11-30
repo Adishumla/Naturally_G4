@@ -1,5 +1,5 @@
 const translationElements = document.querySelectorAll("[data-lang-key]");
-const button = document.querySelector("button");
+
 let langSet = false;
 
 const translations = {
@@ -86,10 +86,6 @@ const addTranslations = (lang) => {
     element.textContent = translations[lang][langKey];
   });
 };
-
-button.addEventListener("click", () => {
-  addTranslations("en");
-});
 
 const sv_lang = document.querySelector(".drop-down-footer .sv");
 const en_lang = document.querySelector(".drop-down-footer .en");
