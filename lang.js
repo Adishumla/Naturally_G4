@@ -14,6 +14,10 @@ const translations = {
     "shipping-text": "1-3 dagars leverans",
     "login-btn": "Logga in",
 
+    "dropdown-header-clothes": "Kläder",
+    "dropdown-header-shoes": "Skor",
+    "dropdown-header-env": "Hållbarhet",
+
     "shirt-text": "Arie",
     "shirt-material": "Återvunnen bomull",
     "shirt-price": "1 499:-",
@@ -50,6 +54,10 @@ const translations = {
     "returns-text": "Free shipping and returns",
     "shipping-text": "1-3 day delivery",
     "login-btn": "Login",
+
+    "dropdown-header-clothes": "Clothes",
+    "dropdown-header-shoes": "Shoes",
+    "dropdown-header-env": "Sustainability",
 
     "shirt-text": "Arie",
     "shirt-material": "Recycled cotton",
