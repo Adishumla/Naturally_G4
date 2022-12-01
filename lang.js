@@ -5,9 +5,9 @@ let langSet = false;
 const translations = {
   sv: {
     "buy-button": "Köp nu",
-    "header-clothes": "Kläder",
-    "header-shoes": "Skor",
-    "header-env": "hållbarhet",
+    "header-clothes": "KLÄDER",
+    "header-shoes": "SKOR",
+    "header-env": "HÅLLBARHET",
     "shop-button": "Shoppa kollektionen",
     "discount-text": "Bli medlem och få 10%",
     "returns-text": "Fri frakt och retur",
@@ -42,9 +42,9 @@ const translations = {
   },
   en: {
     "buy-button": "Buy now",
-    "header-clothes": "Clothes",
-    "header-shoes": "Shoes",
-    "header-env": "sustainability",
+    "header-clothes": "CLOTHES",
+    "header-shoes": "SHOES",
+    "header-env": "SUSTAINABILITY",
     "shop-button": "Shop the collection",
     "discount-text": "Become a member and get 10%",
     "returns-text": "Free shipping and returns",
