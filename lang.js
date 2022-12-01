@@ -63,7 +63,7 @@ const translations = {
     "jacket-material": "Recycled wool",
     "jacket-price": "1 299:-",
 
-    "dress-name": "jackie",
+    "dress-name": "Jackie",
     "dress-material": "Linen",
     "dress-price": "1 599:-",
 
