@@ -120,7 +120,7 @@ section.scroll-container button.buy-now-btn:hover {
   background-color: var(--color-naturegreen);
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 768px) {
   section.scroll-container {
     display: grid;
     grid-template-rows: 1fr 239px;

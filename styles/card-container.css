@@ -6,7 +6,7 @@ section.card-container {
   margin-left: 24px;
   margin-right: 24px;
 }
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 768px) {
   section.card-container {
     margin: 0 auto;
   }
@@ -41,7 +41,7 @@ article.card .text-container {
   margin-top: 24px;
 }
 /* first child */
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 768px) {
   article.card:first-of-type {
     display: grid;
     grid-template-rows: 1fr 239px;
@@ -77,7 +77,7 @@ article.card .text-container {
   }
 }
 /* 2nd child */
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 768px) {
   article.card:nth-of-type(2) {
     display: grid;
     grid-template-rows: 1fr 239px;
@@ -157,7 +157,7 @@ article.card .text-container strong {
 section.card-container button.buy-now-btn {
   display: none;
 }
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 768px) {
   section.card-container button.buy-now-btn {
     display: inline-block;
     width: 115px;
@@ -202,7 +202,7 @@ section.card-container button.buy-now-btn {
 }
 
 /* Last card */
-@media screen and (max-width: 429px) {
+@media screen and (max-width: 767px) {
   article.card.last-card {
     height: 623px;
     margin: 104px 0px 88px 0px;
@@ -276,7 +276,7 @@ section.card-container button.buy-now-btn {
     border: 1px solid var(--color-blueberry);
   }
 }
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 768px) {
   article.card.mobile-only {
     display: none;
   }
@@ -285,7 +285,7 @@ section.card-container button.buy-now-btn {
   }
 }
 /* Last card desktop view */
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 768px) {
   article.card.last-card {
     display: grid;
     grid-template-rows: 214px 1fr 271px;
@@ -314,7 +314,7 @@ section.card-container button.buy-now-btn {
   }
 }
 /* Desktop view hover effects */
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 768px) {
   img:not(.heart),
   video {
     filter: saturate(0);
