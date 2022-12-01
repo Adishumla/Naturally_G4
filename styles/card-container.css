@@ -162,7 +162,6 @@ section.card-container button.buy-now-btn {
     display: inline-block;
     width: 115px;
     height: 43px;
-    background-color: var(--color-greenly);
     color: var(--color-white);
     border-radius: 16px;
     border: none;
