@@ -4,7 +4,7 @@ let langSet = false;
 
 const translations = {
   sv: {
-    "buy-button": "köp nu",
+    "buy-button": "Köp nu",
     "header-clothes": "Kläder",
     "header-shoes": "Skor",
     "header-env": "hållbarhet",
