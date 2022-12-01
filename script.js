@@ -82,14 +82,19 @@ all_videos.forEach((video) => {
 /* change video source for mobile and desktop */
 const video = document.querySelector("video");
 const videoSource = document.querySelector(" .card-img-1 source");
+const video2 = document.querySelector("video.card-img-2");
+const videoSource2 = document.querySelector(".card-img-2 source");
 
 const changeVideoSource = () => {
   if (window.innerWidth < 768) {
     videoSource.src = "images/Mloafer_done02.mp4";
+    videoSource2.src = "images/Mshirt_done03.mkv";
   } else {
     videoSource.src = "images/Dloafer_done02.mp4";
+    videoSource2.src = "images/Dshirt_done03.mkv";
   }
   video.load();
+  video2.load();
 };
 
 window.addEventListener("resize", () => {
