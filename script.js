@@ -66,17 +66,18 @@ window.addEventListener("click", (e) => {
   }
 });
 
-const video = document.querySelector("video");
+const all_videos = document.querySelectorAll("video");
 
-video.addEventListener("mouseleave", () => {
-  video.pause();
+all_videos.forEach((video) => {
+  video.addEventListener("mouseleave", () => {
+    video.pause();
+  });
+
+  // play video when hovering
+  video.addEventListener("mouseover", () => {
+    video.play();
+  });
 });
-
-// play video when hovering
-video.addEventListener("mouseover", () => {
-  video.play();
-});
-
 //navbar
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 /* let prevScrollpos = window.pageYOffset;
