@@ -8,6 +8,9 @@
   --color-ice-blue: #97c2de;
   --color-blueberry: #7ca6c2;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   box-sizing: border-box;

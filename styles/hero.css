@@ -75,7 +75,11 @@ section.carousel .carousel-nav {
   gap: 20px;
   height: 20px;
 }
-
+.hero-span button a {
+  color: var(--color-white);
+  display: block;
+  width: 100%;
+}
 section.carousel .carousel-button {
   width: 10px;
   height: 10px;

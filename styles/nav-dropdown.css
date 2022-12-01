@@ -17,12 +17,13 @@ nav.drop-down.active {
 nav.drop-down ul {
   display: flex;
   flex-direction: column;
-  margin-bottom: 111px;
+  margin: 32px 0px 51px 16px;
+  padding: 0px;
 }
-nav.drop-down ul li {
+nav.drop-down ul li,
+nav.drop-down p {
   margin-bottom: 24px;
   font-size: 1.25rem;
-  font-weight: 800;
   text-decoration: none;
   list-style: none;
 }
@@ -31,8 +32,9 @@ nav.drop-down ul a {
 }
 nav.drop-down div.drop-down-footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-  font-weight: 800;
-  font-size: 1rem;
+  height: 81px;
+  font-size: 1.25rem;
+  margin-left: 16px;
 }
