@@ -5,18 +5,14 @@ let langSet = false;
 const translations = {
   sv: {
     "buy-button": "Köp nu",
-    "header-clothes": "KLÄDER",
-    "header-shoes": "SKOR",
-    "header-env": "HÅLLBARHET",
+    "header-clothes": "Kläder",
+    "header-shoes": "Skor",
+    "header-env": "Hållbarhet",
     "shop-button": "Shoppa kollektionen",
     "discount-text": "Bli medlem och få 10%",
     "returns-text": "Fri frakt och retur",
     "shipping-text": "1-3 dagars leverans",
     "login-btn": "Logga in",
-
-    "dropdown-header-clothes": "Kläder",
-    "dropdown-header-shoes": "Skor",
-    "dropdown-header-env": "Hållbarhet",
 
     "shirt-text": "Arie",
     "shirt-material": "Återvunnen bomull",
@@ -46,18 +42,14 @@ const translations = {
   },
   en: {
     "buy-button": "Buy now",
-    "header-clothes": "CLOTHES",
-    "header-shoes": "SHOES",
-    "header-env": "SUSTAINABILITY",
+    "header-clothes": "Clothes",
+    "header-shoes": "Shoes",
+    "header-env": "Sustainability",
     "shop-button": "Shop the collection",
     "discount-text": "Become a member and get 10%",
     "returns-text": "Free shipping and returns",
     "shipping-text": "1-3 day delivery",
     "login-btn": "Login",
-
-    "dropdown-header-clothes": "Clothes",
-    "dropdown-header-shoes": "Shoes",
-    "dropdown-header-env": "Sustainability",
 
     "shirt-text": "Arie",
     "shirt-material": "Recycled cotton",

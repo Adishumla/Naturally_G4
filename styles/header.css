@@ -155,4 +155,7 @@ header.navbar {
     cursor: pointer;
     border-radius: 14px;
   }
+  .nav-desktop p {
+    text-transform: uppercase;
+  }
 }
