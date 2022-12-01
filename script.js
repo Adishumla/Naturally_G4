@@ -78,6 +78,25 @@ all_videos.forEach((video) => {
     video.play();
   });
 });
+
+/* change video source for mobile and desktop */
+const video = document.querySelector("video");
+const videoSource = document.querySelector(" .card-img-1 source");
+
+const changeVideoSource = () => {
+  if (window.innerWidth < 768) {
+    videoSource.src = "images/Mloafer_done02.mp4";
+  } else {
+    videoSource.src = "images/Dloafer_done02.mp4";
+  }
+  video.load();
+};
+
+window.addEventListener("resize", () => {
+  changeVideoSource();
+});
+changeVideoSource();
+
 //navbar
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 /* let prevScrollpos = window.pageYOffset;
@@ -179,11 +198,3 @@ heartContainers.forEach((heartContainer) => {
     heartContainer.classList.toggle("active");
   });
 });
-
-//import videos
-const firstCardMp4 = document.querySelector(
-  ".card-container article:first-of-type .card-img-1 source"
-);
-const secondCardMp4 = document.querySelector(
-  ".card-container article:nth-of-type(2) .card-img-1 source"
-);
