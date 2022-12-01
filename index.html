@@ -27,7 +27,6 @@
         <p><a class="sv" href="#">SV</a>/<a class="en" href="#">EN</a></p>
       </div>
     </nav>
-    <!-- fixed navbar -->
     <header class="navbar">
       <section class="desktop-info">
         <p data-lang-key="login-btn"></p>
@@ -74,7 +73,6 @@
         <img src="images/cart.svg" alt="cart" />
       </div>
     </header>
-    <!-- HERO -->
     <section class="carousel">
       <div class="hero-span">
         <h1><span>N</span>ATURALLY X ALLNATUR</h1>
@@ -99,11 +97,11 @@
       </div>
       <div class="carousel-item">
         <!-- Ska bytas till Mdress_01.png -->
-        <img class="carousel-img" src="images/Mkavaj_done01.png" alt="" />
+        <img class="carousel-img" src="images/Mdress_done01.png" alt="" />
       </div>
       <div class="carousel-item">
         <!-- Ska bytas till Mshirt_done01.png -->
-        <img class="carousel-img" src="images/Mkavaj_done01.png" alt="" />
+        <img class="carousel-img" src="images/Mshirt_done01.png" alt="" />
       </div>
       <div class="carousel-item">
         <img class="carousel-img" src="images/Mloafer_done01.png" alt="" />
@@ -132,7 +130,7 @@
         </button>
       </div>
     </section>
-    <!-- card h2, span, img -->
+
     <section class="card-container">
       <article class="card">
         <video
@@ -144,10 +142,19 @@
           defaultMuted
           preload="auto"
         >
-          <source src="images/Mloafer_done02.mp4" />
+          <source
+            src="images/Mloafer_done02.mp4"
+            type="video/mp4"
+            media="all and (max-width:430px)"
+          />
+          <source
+            src="images/Dloafer_done02.mp4"
+            type="video/mp4"
+            media="all and (min-width:430px)"
+          />
         </video>
         <!-- <div style="width: 100%; overflow: hidden"> -->
-        <img class="card-img-2" src="images/Mloafer_done03.png" alt="" />
+        <img class="card-img-2" src="images/Dloafer_done03.png" alt="" />
         <!-- </div> -->
         <div class="text-container v-scroll">
           <div
@@ -161,7 +168,6 @@
               alt=""
             />
           </div>
-          <!-- Below children not aligned to center by its parent like the .card items further down -->
           <h2 data-lang-key="shoe-text"></h2>
           <p data-lang-key="shoe-material"></p>
           <strong data-lang-key="shoe-price"></strong>
@@ -237,8 +243,8 @@
         </div>
       </article>
       <article class="card last-card">
-        <img class="card-img-2" src="images/Dkavaj_done02.png" alt="" />
-        <img class="card-img-1" src="images/Dkavaj_done03.png" alt="" />
+        <img class="card-img-2" src="images/Dkavaj_done03.png" alt="" />
+        <img class="card-img-1" src="images/Dkavaj_done02.png" alt="" />
         <div class="text-container v-scroll">
           <div
             class="heart-container"
