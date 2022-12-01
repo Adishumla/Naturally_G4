@@ -179,3 +179,11 @@ heartContainers.forEach((heartContainer) => {
     heartContainer.classList.toggle("active");
   });
 });
+
+//import videos
+const firstCardMp4 = document.querySelector(
+  ".card-container article:first-of-type .card-img-1 source"
+);
+const secondCardMp4 = document.querySelector(
+  ".card-container article:nth-of-type(2) .card-img-1 source"
+);
