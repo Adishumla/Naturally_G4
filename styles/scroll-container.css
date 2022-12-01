@@ -56,7 +56,7 @@ section.scroll-container .text-container .heart-container img.outline {
 }
 section.scroll-container .text-container .heart-container img.background {
   opacity: 0;
-  transition: 1s ease;
+  transition: 1s ease-in-out;
 }
 @keyframes heart {
   0% {
