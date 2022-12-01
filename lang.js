@@ -38,7 +38,7 @@ const translations = {
     "footer-support": "Support",
     "footer-career": "Karriär",
 
-    /* "enter-email": "Fyll i epostadress", */
+    "enter-email": "Fyll i epostadress",
   },
   en: {
     "buy-button": "Buy now",
@@ -75,15 +75,19 @@ const translations = {
     "footer-support": "Support",
     "footer-career": "Careers",
 
-    /* "enter-email": (placeholder = "Enter email"), */
+    "enter-email": "Enter email",
   },
 };
 
 const addTranslations = (lang) => {
   translationElements.forEach((element) => {
-    const langKey = element.dataset.langKey;
-
-    element.textContent = translations[lang][langKey];
+    if (element.dataset.langKey === "enter-email") {
+      const langKey = element.dataset.langKey;
+      element.placeholder = translations[lang][langKey];
+    } else {
+      const langKey = element.dataset.langKey;
+      element.textContent = translations[lang][langKey];
+    }
   });
 };
 
