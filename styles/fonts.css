@@ -3,18 +3,13 @@
 
 @font-face {
   font-family: "Gurmukhi MN";
-  src: url("font/GurmukhiMN.woff2") format("woff2"),
+  src: local("Gurmukhi MN"), url("font/GurmukhiMN.woff2") format("woff2"),
     url("font/GurmukhiMN.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
-  font-family: "Gurmukhi MN";
-  src: url("font/GurmukhiMN-Bold.woff2") format("woff2"),
+  font-family: "Gurmukhi MN Bold";
+  src: local("Gurmukhi MN"), url("font/GurmukhiMN-Bold.woff2") format("woff2"),
     url("font/GurmukhiMN-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+  font-weight: 700;
 }

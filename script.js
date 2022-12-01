@@ -208,6 +208,8 @@ heartContainers.forEach((heartContainer) => {
 /* get images that are in viewport */
 const images_saturate = document.querySelectorAll("img");
 const videos_saturate = document.querySelectorAll("video");
+const gridscroll = document.querySelector(".gridscroll");
+const gridscroll_imgs = document.querySelectorAll(".gridscroll img");
 
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
@@ -237,6 +239,15 @@ const run = () =>
         video.pause();
       }
     });
+    if (isInViewport(gridscroll)) {
+      gridscroll_imgs.forEach((img) => {
+        img.classList.add("active-img");
+      });
+    } else {
+      gridscroll_imgs.forEach((img) => {
+        img.classList.remove("active-img");
+      });
+    }
   });
 
 // Events
