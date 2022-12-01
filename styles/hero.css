@@ -27,6 +27,20 @@ section.carousel {
   }
 }
 
+/* make transition between img in carousel */
+.carousel-item-selected {
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .second .carousel-button {
   background: var(--color-ice-blue);
   border: none;
