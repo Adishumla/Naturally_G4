@@ -17,6 +17,15 @@ body {
   font-family: futura, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.drop-down a {
+  color: var(--color-black);
+}
+
 @media (min-width: 600px) {
   body {
     padding-top: 123px;
