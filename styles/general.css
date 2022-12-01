@@ -38,3 +38,18 @@ video {
     padding-top: 123px;
   }
 }
+.hero-span button,
+section.card-container button,
+button.buy-now-btn {
+  background-color: var(--color-greenly);
+  font-weight: bold;
+}
+section.card-container button,
+button.buy-now-btn {
+  font-size: 1.25rem;
+}
+.hero-span button:hover,
+section.card-container button:hover,
+button.buy-now-btn:hover {
+  background-color: var(--color-naturegreen);
+}
