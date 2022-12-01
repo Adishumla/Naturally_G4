@@ -125,14 +125,6 @@ if (langSet === false) {
 const input = document.querySelector("input");
 const input2 = document.querySelector("input[type='email']");
 
-/* if (langSet === true) {
-  input.placeholder = "Enter email address";
-  input2.placeholder = "Enter email address";
-} else {
-  input.placeholder = "Fyll i epostadress";
-  input2.placeholder = "Fyll i epostadress";
-}
- */
 if (addTranslations === "en") {
   input.placeholder = "Enter email address";
   input2.placeholder = "Enter email address";
