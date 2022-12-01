@@ -1,6 +1,6 @@
 section.carousel {
   position: relative;
-  height: 100vh;
+  height: auto;
 }
 
 .carousel-item {
@@ -152,13 +152,13 @@ div.hero-span {
     display: none;
   }
   .desktop-hero {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
   .desktop-hero-img-container {
-    height: 50%;
+    height: auto;
     width: 50%;
   }
   .desktop-hero-img-container img {
