@@ -109,10 +109,11 @@ article.card .text-container .heart-container {
   grid-row: 1;
   position: relative;
   height: 40px;
-  width: 100%;
+  width: 50px;
   display: flex;
   justify-content: end;
   align-items: center;
+  justify-self: end;
 }
 
 article.card .text-container .heart-container img {
