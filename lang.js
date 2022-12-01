@@ -26,8 +26,8 @@ const translations = {
     "jacket-material": "Återvunnen ull",
     "jacket-price": "1 299:-",
 
-    "dress-name": "jackie",
-    "dress-material": "Linné",
+    "dress-name": "Jackie",
+    "dress-material": "Linne",
     "dress-price": "1 599:-",
 
     "discount-text-long": "Bli medlem och få 10% rabatt på ditt första köp",
