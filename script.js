@@ -205,8 +205,9 @@ heartContainers.forEach((heartContainer) => {
 });
  */
 
-/* set active-img on all img when they are in viewport on mobile */
-const img = document.querySelectorAll(".img");
+/* get images that are in viewport */
+const images_saturate = document.querySelectorAll("img");
+const videos_saturate = document.querySelectorAll("video");
 
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
@@ -220,12 +221,22 @@ const isInViewport = (el) => {
 };
 
 const run = () =>
-  img.forEach((el) => {
-    if (isInViewport(el)) {
-      el.classList.add("active");
+  images_saturate.forEach((image) => {
+    if (isInViewport(image)) {
+      image.classList.add("active-img");
     } else {
-      el.classList.remove("active");
+      image.classList.remove("active-img");
     }
+
+    videos_saturate.forEach((video) => {
+      if (isInViewport(video) && window.innerWidth < 768) {
+        video.classList.add("active-video");
+        video.play();
+      } else {
+        video.classList.remove("active-video");
+        video.pause();
+      }
+    });
   });
 
 // Events
